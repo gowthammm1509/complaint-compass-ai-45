@@ -73,6 +73,11 @@ export default {
 					todo: '#E5E7EB',
 					inprogress: '#3498db',
 					resolved: '#2ecc71'
+				},
+				gray: {
+					700: '#374151',
+					800: '#1F2937',
+					900: '#111827',
 				}
 			},
 			borderRadius: {

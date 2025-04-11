@@ -10,7 +10,7 @@ const Tickets = () => {
       <div className="flex justify-between items-center">
         <div>
           <h1 className="text-2xl font-bold">Tickets</h1>
-          <p className="text-gray-500 mt-1">Manage and track customer complaints</p>
+          <p className="text-gray-500 mt-1 dark:text-gray-400">Manage and track customer complaints</p>
         </div>
         <div className="flex items-center space-x-2">
           <div className="relative">
@@ -18,11 +18,11 @@ const Tickets = () => {
             <input
               type="text"
               placeholder="Search tickets..."
-              className="pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+              className="pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:placeholder-gray-400 hover-improve-light"
             />
           </div>
-          <Button variant="outline" size="icon">
-            <Filter className="h-4 w-4" />
+          <Button variant="outline" size="icon" className="dark:border-gray-600 dark:hover:bg-gray-700">
+            <Filter className="h-4 w-4 dark:text-gray-300" />
           </Button>
         </div>
       </div>

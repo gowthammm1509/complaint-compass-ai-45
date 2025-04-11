@@ -1,6 +1,7 @@
 
 import { Bell, HelpCircle, Moon, Sun } from "lucide-react";
 import { useState, useEffect } from "react";
+import { Toggle } from "@/components/ui/toggle";
 
 const Header = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -36,9 +37,10 @@ const Header = () => {
         <h1 className="text-xl font-semibold dark:text-white">Complaint Management</h1>
       </div>
       <div className="flex items-center space-x-4">
-        <button 
-          className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700" 
-          onClick={toggleDarkMode}
+        <Toggle
+          className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700"
+          pressed={darkMode}
+          onPressedChange={toggleDarkMode}
           aria-label={darkMode ? "Switch to light mode" : "Switch to dark mode"}
         >
           {darkMode ? (
@@ -46,12 +48,12 @@ const Header = () => {
           ) : (
             <Moon className="h-5 w-5 text-gray-600" />
           )}
-        </button>
-        <button className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 relative">
+        </Toggle>
+        <button className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 relative hover-improve-light">
           <Bell className="h-5 w-5 text-gray-600 dark:text-gray-300" />
           <span className="absolute top-1 right-1 h-3 w-3 bg-red-500 rounded-full border-2 border-white dark:border-gray-800"></span>
         </button>
-        <button className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700">
+        <button className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 hover-improve-light">
           <HelpCircle className="h-5 w-5 text-gray-600 dark:text-gray-300" />
         </button>
       </div>

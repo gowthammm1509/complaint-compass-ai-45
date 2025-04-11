@@ -38,7 +38,11 @@ const Sidebar = () => {
       <div className="p-4">
         <div className="relative">
           <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
-          <input type="text" placeholder="Search tickets..." className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700 dark:border-gray-600 dark:text-white" />
+          <input 
+            type="text" 
+            placeholder="Search tickets..." 
+            className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent dark:bg-gray-700 dark:border-gray-600 dark:text-white dark:placeholder-gray-400 hover-improve-light" 
+          />
         </div>
       </div>
 
@@ -56,7 +60,7 @@ const Sidebar = () => {
       </nav>
 
       <div className="p-4 border-t border-gray-200 dark:border-gray-700">
-        <div className="flex items-center space-x-3">
+        <div className="flex items-center space-x-3 p-2 rounded-md hover-improve">
           <div className="h-8 w-8 bg-indigo-600 rounded-full flex items-center justify-center">
             <span className="text-white font-medium text-sm">JS</span>
           </div>
