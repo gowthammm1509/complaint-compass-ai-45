@@ -20,7 +20,7 @@ const StatCard = ({
   trend,
 }: StatCardProps) => {
   return (
-    <div className="bg-white rounded-lg shadow-sm p-5 border border-gray-100 stat-card">
+    <div className="bg-white rounded-lg shadow-sm p-5 border border-gray-100">
       <div className="flex justify-between items-start">
         <div>
           <p className="text-sm font-medium text-gray-500">{title}</p>
@@ -42,7 +42,7 @@ const StatCard = ({
             </div>
           )}
         </div>
-        <div className="p-3 rounded-full bg-blue-50 text-primary icon-container">{icon}</div>
+        <div className="p-3 rounded-full bg-blue-50 text-primary">{icon}</div>
       </div>
     </div>
   );

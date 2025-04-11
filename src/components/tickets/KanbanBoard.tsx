@@ -114,11 +114,11 @@ const KanbanBoard = () => {
             <div className="flex items-center mb-4">
               <div className={`h-3 w-3 rounded-full ${column.color} mr-2`}></div>
               <h2 className="font-medium">{column.title}</h2>
-              <span className="text-gray-500 text-sm ml-2 dark:text-gray-400">
+              <span className="text-gray-500 text-sm ml-2">
                 ({getTicketsByStatus(column.id).length})
               </span>
             </div>
-            <div className="bg-gray-50 rounded-md p-3 flex-1 overflow-y-auto dark:bg-gray-800/50 dark:border dark:border-gray-700">
+            <div className="bg-gray-50 rounded-md p-3 flex-1 overflow-y-auto">
               <div className="space-y-3">
                 {getTicketsByStatus(column.id).map((ticket) => (
                   <TicketCard key={ticket.id} ticket={ticket} />
