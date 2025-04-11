@@ -3,12 +3,12 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
 
 const data = [
-  { name: 'Technical', count: 35 },
+  { name: 'Technical Support', count: 35 },
   { name: 'Billing', count: 25 },
-  { name: 'Service', count: 20 },
-  { name: 'Feedback', count: 15 },
-  { name: 'Product', count: 12 },
-  { name: 'Other', count: 8 },
+  { name: 'Product Inquiry', count: 20 },
+  { name: 'Account/Login Issues', count: 18 },
+  { name: 'Return/Exchange', count: 15 },
+  { name: 'Feedback/Suggestions', count: 12 },
 ];
 
 const ComplaintCategoriesGraph = () => {

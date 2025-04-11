@@ -3,11 +3,12 @@ import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, Legend } from "recha
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const data = [
-  { name: "Technical", value: 35, color: "#9333ea" },
+  { name: "Technical Support", value: 35, color: "#9333ea" },
   { name: "Billing", value: 25, color: "#3b82f6" },
-  { name: "Service", value: 20, color: "#f97316" },
-  { name: "Feedback", value: 15, color: "#22c55e" },
-  { name: "Other", value: 5, color: "#64748b" },
+  { name: "Product Inquiry", value: 20, color: "#f97316" },
+  { name: "Account/Login Issues", value: 18, color: "#10b981" },
+  { name: "Return/Exchange", value: 15, color: "#22c55e" },
+  { name: "Feedback/Suggestions", value: 12, color: "#64748b" },
 ];
 
 const COLORS = data.map(item => item.color);

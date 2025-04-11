@@ -32,10 +32,11 @@ const TicketCard = ({ ticket }: TicketCardProps) => {
 
   const categoryColors = {
     "Billing": "bg-blue-100 text-blue-800",
-    "Technical": "bg-purple-100 text-purple-800",
-    "Service": "bg-orange-100 text-orange-800",
-    "Feedback": "bg-green-100 text-green-800",
-    "Other": "bg-gray-100 text-gray-800",
+    "Technical Support": "bg-purple-100 text-purple-800",
+    "Product Inquiry": "bg-orange-100 text-orange-800",
+    "Account/Login Issues": "bg-red-100 text-red-800",
+    "Return/Exchange": "bg-green-100 text-green-800",
+    "Feedback/Suggestions": "bg-gray-100 text-gray-800",
   };
 
   return (

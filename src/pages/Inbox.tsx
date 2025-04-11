@@ -1,45 +1,45 @@
 
 import { useState } from "react";
-import { MessageSquare, Folder, AlertTriangle, Clock, Zap, Tag, Truck, CreditCard, Package } from "lucide-react";
+import { MessageSquare, Folder, AlertTriangle, Clock, Zap, Tag, CreditCard, Wrench, Package, User, RotateCcw, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
 // Dummy complaints data
 const complaintsByCategory = {
-  "Product Quality": [
-    { id: 1, title: "Defective smartphone screen", date: "2025-04-08", status: "Open" },
-    { id: 2, title: "Headphones stopped working after a week", date: "2025-04-07", status: "In Review" },
-    { id: 3, title: "Laptop battery not holding charge", date: "2025-04-05", status: "Open" },
+  "Billing": [
+    { id: 1, title: "Double charged for subscription", date: "2025-04-10", status: "Open" },
+    { id: 2, title: "Refund not processed", date: "2025-04-04", status: "In Review" },
   ],
-  "Delivery Issues": [
-    { id: 4, title: "Package never arrived", date: "2025-04-09", status: "Open" },
-    { id: 5, title: "Wrong item delivered", date: "2025-04-06", status: "Resolved" },
+  "Technical Support": [
+    { id: 3, title: "Website login not working", date: "2025-04-08", status: "Open" },
+    { id: 4, title: "App crashes when uploading photos", date: "2025-04-06", status: "In Review" },
+    { id: 5, title: "Unable to complete checkout", date: "2025-04-01", status: "Resolved" },
   ],
-  "Billing Problems": [
-    { id: 6, title: "Double charged for subscription", date: "2025-04-10", status: "Open" },
-    { id: 7, title: "Refund not processed", date: "2025-04-04", status: "In Review" },
+  "Product Inquiry": [
+    { id: 6, title: "Compatibility with third-party devices", date: "2025-04-09", status: "Open" },
+    { id: 7, title: "Product specifications request", date: "2025-04-05", status: "Open" },
   ],
-  "Service Issues": [
-    { id: 8, title: "Long wait times for customer support", date: "2025-04-03", status: "Open" },
-    { id: 9, title: "Rude customer service representative", date: "2025-04-02", status: "Resolved" },
+  "Account/Login Issues": [
+    { id: 8, title: "Cannot reset password", date: "2025-04-03", status: "Open" },
+    { id: 9, title: "Account locked after multiple attempts", date: "2025-04-02", status: "Resolved" },
   ],
-  "Website Problems": [
-    { id: 10, title: "Unable to complete checkout", date: "2025-04-01", status: "In Review" },
-    { id: 11, title: "Account login not working", date: "2025-03-31", status: "Open" },
+  "Return/Exchange": [
+    { id: 10, title: "Defective smartphone screen", date: "2025-04-07", status: "Open" },
+    { id: 11, title: "Wrong item delivered", date: "2025-03-31", status: "In Review" },
   ],
-  "Warranty Claims": [
-    { id: 12, title: "Warranty claim denied unfairly", date: "2025-03-30", status: "Open" },
+  "Feedback/Suggestions": [
+    { id: 12, title: "Feature request for mobile app", date: "2025-03-30", status: "Open" },
   ]
 };
 
 // Category icons mapping
 const categoryIcons = {
-  "Product Quality": Package,
-  "Delivery Issues": Truck,
-  "Billing Problems": CreditCard,
-  "Service Issues": MessageSquare,
-  "Website Problems": Zap,
-  "Warranty Claims": Tag
+  "Billing": CreditCard,
+  "Technical Support": Wrench,
+  "Product Inquiry": Package,
+  "Account/Login Issues": User,
+  "Return/Exchange": RotateCcw,
+  "Feedback/Suggestions": MessageCircle
 };
 
 const Inbox = () => {

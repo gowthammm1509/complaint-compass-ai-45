@@ -10,7 +10,7 @@ const initialTickets: Ticket[] = [
     id: "T-1001",
     title: "Website login issues after recent update",
     customerName: "John Doe",
-    category: "Technical",
+    category: "Technical Support",
     priority: "high",
     status: "todo",
     assignee: undefined,
@@ -50,9 +50,9 @@ const initialTickets: Ticket[] = [
   },
   {
     id: "T-1004",
-    title: "Service outage reported in downtown area",
+    title: "Questions about product compatibility",
     customerName: "Robert Garcia",
-    category: "Service",
+    category: "Product Inquiry",
     priority: "critical",
     status: "inprogress",
     assignee: {
@@ -65,9 +65,9 @@ const initialTickets: Ticket[] = [
   },
   {
     id: "T-1005",
-    title: "Poor customer service experience",
+    title: "Feature suggestion for mobile app",
     customerName: "Emily Wilson",
-    category: "Feedback",
+    category: "Feedback/Suggestions",
     priority: "medium",
     status: "resolved",
     assignee: {
@@ -80,9 +80,9 @@ const initialTickets: Ticket[] = [
   },
   {
     id: "T-1006",
-    title: "App crashes when uploading photos",
+    title: "Return request for damaged product",
     customerName: "David Thompson",
-    category: "Technical",
+    category: "Return/Exchange",
     priority: "high",
     status: "resolved",
     assignee: {
