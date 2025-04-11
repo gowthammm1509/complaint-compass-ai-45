@@ -1,8 +1,6 @@
 
 import { useState } from "react";
 import TicketCard, { Ticket } from "./TicketCard";
-import { Plus } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 // Sample data
 const initialTickets: Ticket[] = [
@@ -125,15 +123,6 @@ const KanbanBoard = () => {
                 {getTicketsByStatus(column.id).map((ticket) => (
                   <TicketCard key={ticket.id} ticket={ticket} />
                 ))}
-                {column.id === "todo" && (
-                  <Button 
-                    variant="outline" 
-                    className="w-full border-dashed text-gray-500 hover:text-primary hover:border-primary"
-                  >
-                    <Plus className="h-4 w-4 mr-1" />
-                    <span>Add Ticket</span>
-                  </Button>
-                )}
               </div>
             </div>
           </div>
