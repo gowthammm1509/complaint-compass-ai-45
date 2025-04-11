@@ -5,8 +5,8 @@ const TeamPage = () => {
   const teamMembers = [
     {
       id: 1,
-      name: "Alex Smith",
-      email: "alex.smith@example.com",
+      name: "Saad",
+      email: "saad@example.com",
       avatar: "",
       ticketsAssigned: 12,
       ticketsResolved: 45,
@@ -14,8 +14,8 @@ const TeamPage = () => {
     },
     {
       id: 2,
-      name: "Jane Wilson",
-      email: "jane.wilson@example.com",
+      name: "Prakrit",
+      email: "prakrit@example.com",
       avatar: "",
       ticketsAssigned: 8,
       ticketsResolved: 37,
@@ -23,8 +23,8 @@ const TeamPage = () => {
     },
     {
       id: 3,
-      name: "Chris Taylor",
-      email: "chris.taylor@example.com",
+      name: "Gowtham",
+      email: "gowtham@example.com",
       avatar: "",
       ticketsAssigned: 15,
       ticketsResolved: 62,
@@ -32,8 +32,8 @@ const TeamPage = () => {
     },
     {
       id: 4,
-      name: "Maria Lopez",
-      email: "maria.lopez@example.com",
+      name: "Nazim",
+      email: "nazim@example.com",
       avatar: "",
       ticketsAssigned: 7,
       ticketsResolved: 31,
@@ -41,12 +41,30 @@ const TeamPage = () => {
     },
     {
       id: 5,
-      name: "Dave Kim",
-      email: "dave.kim@example.com",
+      name: "Kalyan",
+      email: "kalyan@example.com",
       avatar: "",
       ticketsAssigned: 9,
       ticketsResolved: 28,
       averageResponseTime: "1.7h",
+    },
+    {
+      id: 6,
+      name: "Samuel",
+      email: "samuel@example.com",
+      avatar: "",
+      ticketsAssigned: 11,
+      ticketsResolved: 42,
+      averageResponseTime: "1.9h",
+    },
+    {
+      id: 7,
+      name: "Noel",
+      email: "noel@example.com",
+      avatar: "",
+      ticketsAssigned: 6,
+      ticketsResolved: 25,
+      averageResponseTime: "2.3h",
     },
   ];
 
@@ -96,38 +114,55 @@ const TeamPage = () => {
         </CardContent>
       </Card>
 
-      <Card>
-        <CardHeader>
-          <CardTitle>Team Performance Overview</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <div className="space-y-4">
-            <div className="flex justify-between items-center">
-              <span className="text-sm font-medium">Average Resolution Time</span>
-              <span className="text-lg font-bold">1.7 days</span>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="bg-white rounded-lg shadow-sm p-5 border border-gray-100">
+          <div className="flex justify-between items-start">
+            <div>
+              <p className="text-sm font-medium text-gray-500">Average Resolution Time</p>
+              <h3 className="text-2xl font-bold mt-1">1.7 days</h3>
+              <div className="flex items-center mt-2">
+                <span className="text-xs font-medium text-green-600">+5%</span>
+                <span className="text-xs text-gray-500 ml-1">vs last week</span>
+              </div>
             </div>
-            <div className="h-2 bg-gray-200 rounded-full">
-              <div className="h-2 bg-green-500 rounded-full" style={{ width: "68%" }}></div>
-            </div>
-
-            <div className="flex justify-between items-center">
-              <span className="text-sm font-medium">First Response Time</span>
-              <span className="text-lg font-bold">2.3 hours</span>
-            </div>
-            <div className="h-2 bg-gray-200 rounded-full">
-              <div className="h-2 bg-blue-500 rounded-full" style={{ width: "82%" }}></div>
-            </div>
-
-            <div className="flex justify-between items-center">
-              <span className="text-sm font-medium">Customer Satisfaction</span>
-              <span className="text-lg font-bold">89%</span>
-            </div>
-            <div className="h-2 bg-gray-200 rounded-full">
-              <div className="h-2 bg-yellow-500 rounded-full" style={{ width: "89%" }}></div>
+            <div className="p-3 rounded-full bg-blue-50 text-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-clock"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
             </div>
           </div>
-        </CardContent>
-      </Card>
+        </div>
+
+        <div className="bg-white rounded-lg shadow-sm p-5 border border-gray-100">
+          <div className="flex justify-between items-start">
+            <div>
+              <p className="text-sm font-medium text-gray-500">First Response Time</p>
+              <h3 className="text-2xl font-bold mt-1">2.3 hours</h3>
+              <div className="flex items-center mt-2">
+                <span className="text-xs font-medium text-red-600">-2%</span>
+                <span className="text-xs text-gray-500 ml-1">vs last week</span>
+              </div>
+            </div>
+            <div className="p-3 rounded-full bg-blue-50 text-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-zap"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-white rounded-lg shadow-sm p-5 border border-gray-100">
+          <div className="flex justify-between items-start">
+            <div>
+              <p className="text-sm font-medium text-gray-500">Customer Satisfaction</p>
+              <h3 className="text-2xl font-bold mt-1">89%</h3>
+              <div className="flex items-center mt-2">
+                <span className="text-xs font-medium text-green-600">+3%</span>
+                <span className="text-xs text-gray-500 ml-1">vs last week</span>
+              </div>
+            </div>
+            <div className="p-3 rounded-full bg-blue-50 text-primary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-smile"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" x2="9.01" y1="9" y2="9"/><line x1="15" x2="15.01" y1="9" y2="9"/></svg>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

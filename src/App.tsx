@@ -10,7 +10,6 @@ import Tickets from "./pages/Tickets";
 import Inbox from "./pages/Inbox";
 import Team from "./pages/Team";
 import Reports from "./pages/Reports";
-import Settings from "./pages/Settings";
 import MainLayout from "./components/layout/MainLayout";
 
 const queryClient = new QueryClient();
@@ -41,11 +40,6 @@ const App = () => (
           <Route path="/reports" element={
             <MainLayout>
               <Reports />
-            </MainLayout>
-          } />
-          <Route path="/settings" element={
-            <MainLayout>
-              <Settings />
             </MainLayout>
           } />
           <Route path="*" element={<NotFound />} />
