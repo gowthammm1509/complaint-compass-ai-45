@@ -1,10 +1,16 @@
+
 import { Home, Inbox, BarChart2, Settings, Users, Search } from "lucide-react";
 import { NavLink } from "react-router-dom";
+
 const Sidebar = () => {
   const navItems = [{
     icon: Home,
     label: "Dashboard",
     path: "/"
+  }, {
+    icon: Inbox,
+    label: "Inbox",
+    path: "/inbox"
   }, {
     icon: Inbox,
     label: "Tickets",
@@ -22,6 +28,7 @@ const Sidebar = () => {
     label: "Settings",
     path: "/settings"
   }];
+
   return <div className="w-64 bg-white border-r border-gray-200 h-full flex flex-col">
       <div className="p-4 border-b border-gray-200">
         <div className="flex items-center space-x-2">
@@ -65,4 +72,5 @@ const Sidebar = () => {
       </div>
     </div>;
 };
+
 export default Sidebar;

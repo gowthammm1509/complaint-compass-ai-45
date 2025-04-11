@@ -7,6 +7,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Tickets from "./pages/Tickets";
+import Inbox from "./pages/Inbox";
 import Team from "./pages/Team";
 import Reports from "./pages/Reports";
 import Settings from "./pages/Settings";
@@ -22,6 +23,11 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/inbox" element={
+            <MainLayout>
+              <Inbox />
+            </MainLayout>
+          } />
           <Route path="/tickets" element={
             <MainLayout>
               <Tickets />
