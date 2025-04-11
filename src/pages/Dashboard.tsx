@@ -1,9 +1,9 @@
 
-import { BarChart3, MailOpen, Clock, CheckCircle, AlertTriangle } from "lucide-react";
+import { BarChart3, MailOpen, Clock, CheckCircle } from "lucide-react";
 import StatCard from "@/components/dashboard/StatCard";
 import TicketsByCategory from "@/components/dashboard/TicketsByCategory";
 import TicketTrend from "@/components/dashboard/TicketTrend";
-import TeamPerformance from "@/components/dashboard/TeamPerformance";
+import ComplaintCategoriesGraph from "@/components/dashboard/ComplaintCategoriesGraph";
 
 const Dashboard = () => {
   return (
@@ -13,7 +13,7 @@ const Dashboard = () => {
         <p className="text-gray-500 mt-1">Overview of complaint management metrics</p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <StatCard
           title="Total Tickets"
           value={152}
@@ -35,13 +35,6 @@ const Dashboard = () => {
           icon={<CheckCircle className="h-5 w-5" />}
           trend={{ value: 8, isPositive: true }}
         />
-        <StatCard
-          title="SLA Breached"
-          value={11}
-          description="Tickets past due date"
-          icon={<AlertTriangle className="h-5 w-5" />}
-          trend={{ value: 3, isPositive: false }}
-        />
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -50,7 +43,7 @@ const Dashboard = () => {
       </div>
 
       <div className="grid grid-cols-1 gap-6">
-        <TeamPerformance />
+        <ComplaintCategoriesGraph />
       </div>
     </div>
   );
