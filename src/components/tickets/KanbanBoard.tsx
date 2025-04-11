@@ -118,7 +118,7 @@ const KanbanBoard = () => {
                 ({getTicketsByStatus(column.id).length})
               </span>
             </div>
-            <div className="bg-gray-50 rounded-md p-3 flex-1 overflow-y-auto dark:bg-gray-800 dark:border dark:border-gray-700">
+            <div className="bg-gray-50 rounded-md p-3 flex-1 overflow-y-auto dark:bg-gray-800/50 dark:border dark:border-gray-700">
               <div className="space-y-3">
                 {getTicketsByStatus(column.id).map((ticket) => (
                   <TicketCard key={ticket.id} ticket={ticket} />

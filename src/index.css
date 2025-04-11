@@ -118,4 +118,37 @@
   .dark .gray-border {
     @apply border-gray-700;
   }
+
+  /* Enhanced dark mode styles for better visibility */
+  .dark .stat-card {
+    @apply bg-gray-800 border-gray-700 text-white;
+  }
+  
+  .dark .stat-card p {
+    @apply text-gray-300;
+  }
+  
+  .dark .stat-card .icon-container {
+    @apply bg-gray-700 text-blue-400;
+  }
+  
+  .dark .ticket-card {
+    @apply bg-gray-800 border-gray-700 text-white;
+  }
+  
+  .dark .ticket-card p {
+    @apply text-gray-300;
+  }
+  
+  .dark .team-row {
+    @apply hover:bg-gray-700;
+  }
+  
+  .dark .resolution-card {
+    @apply bg-gray-800 border-gray-700;
+  }
+  
+  .dark .resolution-card span {
+    @apply text-white;
+  }
 }
